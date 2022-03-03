@@ -7,28 +7,36 @@ import logo from "../logos/image-06.png"
 
 const IndexPage = props => {
   const imageDisplayOne = getImage(
-    props.data.allImageSharp.edges[6].node.gatsbyImageData
+    props.data.allImageSharp.edges[5].node.gatsbyImageData
   )
 
   const imageDisplayTwo = getImage(
-    props.data.allImageSharp.edges[5].node.gatsbyImageData
-  )
-  const imageDisplayThree = getImage(
     props.data.allImageSharp.edges[4].node.gatsbyImageData
   )
-
-  const imageDisplayFour = getImage(
+  const imageDisplayThree = getImage(
     props.data.allImageSharp.edges[3].node.gatsbyImageData
   )
 
-  const imageDisplayFive = getImage(
+  const imageDisplayFour = getImage(
     props.data.allImageSharp.edges[2].node.gatsbyImageData
+  )
+
+  const imageDisplayFive = getImage(
+    props.data.allImageSharp.edges[1].node.gatsbyImageData
   )
 
   return (
     <Layout>
       <div style={{ textAlign: "center" }}>
-        <img src={logo} alt="Switchback Creative" />
+        <img
+          style={{
+            textAlign: "center",
+            margin: "20px auto",
+            maxWidth: "225px",
+          }}
+          src={logo}
+          alt="Switchback Creative"
+        />
         <h1>Hi ABC !!</h1>
         <p>Hope you are having an awesome breakfast!</p>
       </div>
