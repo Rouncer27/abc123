@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `rebeccapurple`,
+      background: `#35C567`,
       marginBottom: `1.45rem`,
     }}
   >
@@ -16,16 +16,16 @@ const Header = ({ siteTitle }) => (
         padding: `1.45rem 1.0875rem`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
+      <h1 style={{ margin: 0, textAlign: "center" }}>
+        <a
+          href="https://switchbackcreative.ca/"
           style={{
             color: `white`,
             textDecoration: `none`,
           }}
         >
           {siteTitle}
-        </Link>
+        </a>
       </h1>
     </div>
   </header>
