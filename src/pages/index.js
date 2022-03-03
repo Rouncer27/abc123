@@ -29,7 +29,7 @@ const IndexPage = props => {
         <h1>Hi ABC !!</h1>
         <p>Hope you are having an awesome breakfast!</p>
       </div>
-      <a href="https://switchbackcreative.ca/">
+      {/* <a href="https://switchbackcreative.ca/">
         <GatsbyImage
           image={imageDisplayOne}
           alt="Switchback Creative"
@@ -60,7 +60,7 @@ const IndexPage = props => {
           formats={["auto", "webp", "avif"]}
           layout="fullWidth"
         />
-      </a>
+      </a> */}
       <p style={{ textAlign: "center", fontSize: "9.5px" }}>
         😙😙😙😙 👋👋👋👋 Hi Gary from your bud, Trevor 👋👋👋👋 😙😙😙😙
       </p>
