@@ -3,6 +3,8 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 
+import logo from "../logos/image-06.png"
+
 const IndexPage = props => {
   const imageDisplayOne = getImage(
     props.data.allImageSharp.edges[6].node.gatsbyImageData
@@ -23,24 +25,10 @@ const IndexPage = props => {
     props.data.allImageSharp.edges[2].node.gatsbyImageData
   )
 
-  const imageDisplaySix = getImage(
-    props.data.allImageSharp.edges[7].node.gatsbyImageData
-  )
-
   return (
     <Layout>
       <div style={{ textAlign: "center" }}>
-        <GatsbyImage
-          image={imageDisplaySix}
-          alt="Switchback Creative"
-          formats={["auto", "webp", "avif"]}
-          layout="fullWidth"
-          style={{
-            maxWidth: "320px",
-            textAlign: "center",
-            margin: "20px auto",
-          }}
-        />
+        <img src={logo} alt="Switchback Creative" />
         <h1>Hi ABC !!</h1>
         <p>Hope you are having an awesome breakfast!</p>
       </div>
