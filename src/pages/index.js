@@ -1,6 +1,6 @@
 import * as React from "react"
-// import { GatsbyImage, getImage } from "gatsby-plugin-image"
-// import { graphql } from "gatsby"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 
 const IndexPage = props => {
@@ -29,7 +29,7 @@ const IndexPage = props => {
         <h1>Hi ABC !!</h1>
         <p>Hope you are having an awesome breakfast!</p>
       </div>
-      {/* <a href="https://switchbackcreative.ca/">
+      <a href="https://switchbackcreative.ca/">
         <GatsbyImage
           image={imageDisplayOne}
           alt="Switchback Creative"
@@ -60,7 +60,7 @@ const IndexPage = props => {
           formats={["auto", "webp", "avif"]}
           layout="fullWidth"
         />
-      </a> */}
+      </a>
       <p style={{ textAlign: "center", fontSize: "9.5px" }}>
         😙😙😙😙 👋👋👋👋 Hi Gary from your bud, Trevor 👋👋👋👋 😙😙😙😙
       </p>
@@ -68,17 +68,17 @@ const IndexPage = props => {
   )
 }
 
-// export const homeQuery = graphql`
-//   {
-//     allImageSharp {
-//       edges {
-//         node {
-//           id
-//           gatsbyImageData(width: 2000)
-//         }
-//       }
-//     }
-//   }
-// `
+export const homeQuery = graphql`
+  {
+    allImageSharp {
+      edges {
+        node {
+          id
+          gatsbyImageData(width: 2000)
+        }
+      }
+    }
+  }
+`
 
 export default IndexPage
