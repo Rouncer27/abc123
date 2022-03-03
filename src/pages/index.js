@@ -43,11 +43,12 @@ const IndexPage = props => {
           layout="fullWidth"
         />
         <GatsbyImage
-          image={imageDisplayThree}
+          image={imageDisplayFive}
           alt="Switchback Creative"
           formats={["auto", "webp", "avif"]}
           layout="fullWidth"
         />
+
         <GatsbyImage
           image={imageDisplayFour}
           alt="Switchback Creative"
@@ -55,7 +56,7 @@ const IndexPage = props => {
           layout="fullWidth"
         />
         <GatsbyImage
-          image={imageDisplayFive}
+          image={imageDisplayThree}
           alt="Switchback Creative"
           formats={["auto", "webp", "avif"]}
           layout="fullWidth"
