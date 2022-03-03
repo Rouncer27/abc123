@@ -1,6 +1,6 @@
 import * as React from "react"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import { graphql } from "gatsby"
+// import { GatsbyImage, getImage } from "gatsby-plugin-image"
+// import { graphql } from "gatsby"
 import Layout from "../components/layout"
 
 const IndexPage = props => {
@@ -68,17 +68,17 @@ const IndexPage = props => {
   )
 }
 
-export const homeQuery = graphql`
-  {
-    allImageSharp {
-      edges {
-        node {
-          id
-          gatsbyImageData(width: 2000)
-        }
-      }
-    }
-  }
-`
+// export const homeQuery = graphql`
+//   {
+//     allImageSharp {
+//       edges {
+//         node {
+//           id
+//           gatsbyImageData(width: 2000)
+//         }
+//       }
+//     }
+//   }
+// `
 
 export default IndexPage
