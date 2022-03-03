@@ -13,19 +13,7 @@ const Header = ({ siteTitle }) => (
         maxWidth: 960,
         padding: `1.45rem 1.0875rem`,
       }}
-    >
-      <h1 style={{ margin: 0, textAlign: "center" }}>
-        <a
-          href="https://switchbackcreative.ca/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </a>
-      </h1>
-    </div>
+    ></div>
   </header>
 )
 

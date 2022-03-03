@@ -23,9 +23,24 @@ const IndexPage = props => {
     props.data.allImageSharp.edges[2].node.gatsbyImageData
   )
 
+  const imageDisplaySix = getImage(
+    props.data.allImageSharp.edges[7].node.gatsbyImageData
+  )
+
   return (
     <Layout>
       <div style={{ textAlign: "center" }}>
+        <GatsbyImage
+          image={imageDisplaySix}
+          alt="Switchback Creative"
+          formats={["auto", "webp", "avif"]}
+          layout="fullWidth"
+          style={{
+            maxWidth: "320px",
+            textAlign: "center",
+            margin: "20px auto",
+          }}
+        />
         <h1>Hi ABC !!</h1>
         <p>Hope you are having an awesome breakfast!</p>
       </div>
@@ -62,7 +77,7 @@ const IndexPage = props => {
           layout="fullWidth"
         />
       </a>
-      <p style={{ textAlign: "center", fontSize: "9.5px" }}>
+      <p style={{ margin: "35px auto", textAlign: "center", fontSize: "11px" }}>
         😙😙😙😙 👋👋👋👋 Hi Gary from your bud, Trevor 👋👋👋👋 😙😙😙😙
       </p>
     </Layout>
