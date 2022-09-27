@@ -6,22 +6,15 @@ import Layout from "../components/layout"
 import logo from "../logos/image-06.png"
 
 const IndexPage = props => {
+  console.log(" props.data.allImageSharp", props.data.allImageSharp)
   const imageDisplayOne = getImage(
-    props.data.allImageSharp.edges[5].node.gatsbyImageData
-  )
-
-  const imageDisplayTwo = getImage(
-    props.data.allImageSharp.edges[4].node.gatsbyImageData
-  )
-  const imageDisplayThree = getImage(
     props.data.allImageSharp.edges[3].node.gatsbyImageData
   )
 
-  const imageDisplayFour = getImage(
+  const imageDisplayTwo = getImage(
     props.data.allImageSharp.edges[2].node.gatsbyImageData
   )
-
-  const imageDisplayFive = getImage(
+  const imageDisplayThree = getImage(
     props.data.allImageSharp.edges[1].node.gatsbyImageData
   )
 
@@ -42,26 +35,13 @@ const IndexPage = props => {
       </div>
       <a href="https://switchbackcreative.ca/">
         <GatsbyImage
-          image={imageDisplayOne}
-          alt="Switchback Creative"
-          formats={["auto", "webp", "avif"]}
-          layout="fullWidth"
-        />
-        <GatsbyImage
           image={imageDisplayTwo}
           alt="Switchback Creative"
           formats={["auto", "webp", "avif"]}
           layout="fullWidth"
         />
         <GatsbyImage
-          image={imageDisplayFive}
-          alt="Switchback Creative"
-          formats={["auto", "webp", "avif"]}
-          layout="fullWidth"
-        />
-
-        <GatsbyImage
-          image={imageDisplayFour}
+          image={imageDisplayOne}
           alt="Switchback Creative"
           formats={["auto", "webp", "avif"]}
           layout="fullWidth"
